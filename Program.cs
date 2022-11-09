@@ -63,8 +63,8 @@ if (app.Environment.IsDevelopment())
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Shop API V1");
     });
-    app.UseDeveloperExceptionPage();
 }
+app.UseDeveloperExceptionPage();
 
 app.UseHttpsRedirection();
 app.UseCors(x => x.AllowAnyOrigin()
