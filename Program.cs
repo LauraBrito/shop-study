@@ -43,8 +43,8 @@ builder.Services.AddAuthentication(x =>
     };
 });
 
-// builder.Services.AddDbContext<DataContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
+builder.Services.AddDbContext<DataContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+// builder.Services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
